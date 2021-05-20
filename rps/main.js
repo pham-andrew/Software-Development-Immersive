@@ -4,11 +4,8 @@ var arg = process.argv.slice(2);
 var you = arg[0].substring(7,arg[0].length)
 console.log("Player plays " + you)
 
-function random(min,max){
-    return Math.floor(Math.random()*(max-min+1)+min);
-}
 var options = ["rock", "paper", "scissors"]
-var computer = options[random(0,2)]
+var computer = options[Math.floor(Math.random()*3)]
 console.log("Computer plays " + computer)
 
 if(you==="rock"){
