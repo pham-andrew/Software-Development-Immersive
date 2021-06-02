@@ -2,16 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 
-// function App() {
-//   return (
-//     <div>
-//       <input type="text" />
-//       <input type="button" value="submit" />
-//       <p>Welcome, ____!</p>
-//     </div>
-//   )
-// }
-
 class App extends React.Component {
   constructor() {
     super();
@@ -33,10 +23,6 @@ class App extends React.Component {
     const newList = this.state.toDoList
     newList.push(document.getElementById("todo").value)
     this.setState({ toDoList: newList })
-    // return (
-    //   <span>{}</span>
-    // )
-    // .map(num => {<e>num</e> })
   }
 
   delete(event) {
@@ -63,10 +49,6 @@ class App extends React.Component {
       </div>
     )
   }
-
 }
 
-// class App extends React.Component {
-
-// }
 export default App;
